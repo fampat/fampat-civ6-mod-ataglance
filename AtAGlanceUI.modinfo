@@ -2,7 +2,7 @@
 <Mod id="017fba02-3052-11e9-b210-d663bd873d93" version="2.4">
   <Properties>
     <Name>At a Glance UI</Name>
-    <Teaser>Displays usefull info at a glance</Teaser>
+    <Teaser>Displays useful info at a glance</Teaser>
     <Description>Details here: https://steamcommunity.com/sharedfiles/filedetails/?id=1683762658</Description>
     <Authors>Fampat</Authors>
     <EnabledByDefault>1</EnabledByDefault>
@@ -47,7 +47,7 @@
 
   	<ImportFiles id="AtAGlanceUI_ImportFiles_All">
   		<Properties>
-  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  			<LoadOrder>13044</LoadOrder>
   		</Properties>
       <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.lua</File>
   		<File>Base/Assets/UI/WorldView/PlotInfo.lua</File>
