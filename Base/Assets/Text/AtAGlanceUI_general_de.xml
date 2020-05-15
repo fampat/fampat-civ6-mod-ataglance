@@ -20,29 +20,6 @@
   		<Text>Resource wird nicht importiert</Text>
   	</Replace>
 
-	  <!-- Ribbon Tooltips -->
-  	<Replace Tag="LOC_RIBBON_MILITARY_STRENGTH_WITH_TREASURY_TOOLTIP" Language="de_DE">
-  		<Text>Militärmacht ({1_MilitaryMightWithTreasury} wenn das Vermögen berücksichtigt wird)</Text>
-  	</Replace>
-  	<Replace Tag="LOC_RIBBON_SCORE" Language="de_DE">
-  		<Text>Punktestand</Text>
-  	</Replace>
-  	<Replace Tag="LOC_RIBBON_SCIENCE" Language="de_DE">
-  		<Text>Forschung (pro Runde)</Text>
-  	</Replace>
-  	<Replace Tag="LOC_RIBBON_CULTURE" Language="de_DE">
-  		<Text>Kultur (pro Runde)</Text>
-  	</Replace>
-  	<Replace Tag="LOC_RIBBON_FAITH" Language="de_DE">
-  		<Text>Gaube (pro Runde)</Text>
-  	</Replace>
-  	<Replace Tag="LOC_RIBBON_FAVOR" Language="de_DE">
-  		<Text>Diplomatische Grunst (pro Runde)</Text>
-  	</Replace>
-  	<Replace Tag="LOC_RIBBON_ERA" Language="de_DE">
-  		<Text>Zeitalter status</Text>
-  	</Replace>
-
 	  <!-- Expansion2 Texts -->
   	<Replace Tag="LOC_DIPLOMACY_DEAL_ALL_LUXURY_RESOURCES" Language="de_DE">
   		<Text>ALLE LUXUS-RESSOURCEN</Text>
@@ -52,26 +29,6 @@
   	</Replace>
   	<Replace Tag="LOC_DIPLOMACY_DEAL_ALL_LUXURY_NOT_OUTGOING" Language="de_DE">
   		<Text>Resource wird nicht exportiert</Text>
-  	</Replace>
-
-	  <!-- Lense -->
-	  <Replace Tag="LOC_AAG_BUILDER_LENS" Language="de_DE">
-  		<Text>Handwerker</Text>
-  	</Replace>
-	  <Replace Tag="LOC_AAG_BUILDER_LENS_TOOLTIP" Language="de_DE">
-  		<Text>Zeige Orte für neue Modernisierungen bzw. Reparaturbedürftige Modernisierungen</Text>
-  	</Replace>
-	  <Replace Tag="LOC_AAG_BUILDER_IMPROVEMENT" Language="de_DE">
-  		<Text>Modernisierung vorhanden</Text>
-  	</Replace>
-	  <Replace Tag="LOC_AAG_BUILDER_IMPROVABLE" Language="de_DE">
-  		<Text>Modernisierung möglich</Text>
-  	</Replace>
-	  <Replace Tag="LOC_AAG_BUILDER_REPAIR" Language="de_DE">
-  		<Text>Reparatur nötig</Text>
-  	</Replace>
-    <Replace Tag="LOC_AAG_BUILDER_DEFAULT" Language="de_DE">
-  		<Text>Keine modernisierbare Ressource</Text>
   	</Replace>
 
     <!-- Notification -->
