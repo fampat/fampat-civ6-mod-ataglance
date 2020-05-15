@@ -3,14 +3,12 @@
 Just adds some usefull information to the UI, nothing great in amount of changes, but great in amount of information :)
 
 [b]Features[/b]
-- Diplomatic-Ribbons show valueable stats
-- Trade-Deal-UI shows all luxuries/strategics and its outgoing/incoming durations
-- Builder lens showing resource-spots, damanged improvements and build improvements
+- Trade-Deal-UI shows all luxuries and its outgoing/incoming durations
 - Citizen marker visible on district/wonder-build city-screen
 - Notification for ending trade-deals
 
 [b]Whats next?[/b]
-- Comming Soon!
+- Nothing planned at the moment.
 
 [b]Known issues[/b]
 - None right now
