@@ -3,14 +3,13 @@
   <Properties>
     <Name>At a Glance UI</Name>
     <Teaser>Displays useful info at a glance</Teaser>
-    <Description>Details here: https://steamcommunity.com/sharedfiles/filedetails/?id=1683762658</Description>
+    <Description>Add a resource overview to trade screen, also notifies on ending resource imports. Adds citizen-icons to the building-view for a quick visualization of worked plots.</Description>
     <Authors>Fampat</Authors>
     <EnabledByDefault>1</EnabledByDefault>
     <DisabledAtStartup>0</DisabledAtStartup>
   	<CompatibleVersions>1.2,2.0</CompatibleVersions>
   	<AffectsSavedGames>0</AffectsSavedGames>
   </Properties>
-
 
   <ActionCriteria>
     <!-- CORE-CRITERIAS START+++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -25,7 +24,6 @@
   	</Criteria>
     <!-- CORE-CRITERIAS END+++++++++++++++++++++++++++++++++++++++++++++++++ -->
   </ActionCriteria>
-
 
   <InGameActions>
     <!-- OTHER-FEATURES START+++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -61,7 +59,6 @@
   	</LocalizedText>
     <!-- OTHER-FEATURES END+++++++++++++++++++++++++++++++++++++++++++++++++ -->
   </InGameActions>
-
 
   <Files>
 	  <File>Scripts/AtAGlance.lua</File>
