@@ -3,7 +3,7 @@
   <Properties>
     <Name>At a Glance UI</Name>
     <Teaser>Displays useful info at a glance</Teaser>
-    <Description>Add a resource overview to trade screen, also notifies on ending resource imports. Adds citizen-icons to the building-view for a quick visualization of worked plots.</Description>
+    <Description>Adds a resource overview to trade screen, also notifies on ending resource imports. Adds citizen-icons to the building-view for a quick visualization of worked plots.</Description>
     <Authors>Fampat</Authors>
     <EnabledByDefault>1</EnabledByDefault>
     <DisabledAtStartup>0</DisabledAtStartup>
