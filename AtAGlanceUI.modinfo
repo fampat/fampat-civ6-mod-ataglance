@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="017fba02-3052-11e9-b210-d663bd873d93" version="2.4">
+  <Properties>
+    <Name>At a Glance UI</Name>
+    <Teaser>Displays usefull info at a glance</Teaser>
+    <Description>Details here: https://steamcommunity.com/sharedfiles/filedetails/?id=1683762658</Description>
+    <Authors>Fampat</Authors>
+    <EnabledByDefault>1</EnabledByDefault>
+    <DisabledAtStartup>0</DisabledAtStartup>
+  	<CompatibleVersions>1.2,2.0</CompatibleVersions>
+  	<AffectsSavedGames>0</AffectsSavedGames>
+  </Properties>
+
+
+  <ActionCriteria>
+    <!-- CORE-CRITERIAS START+++++++++++++++++++++++++++++++++++++++++++++++ -->
+  	<Criteria id="Basegame">
+  		<RuleSetInUse>RULESET_STANDARD</RuleSetInUse>
+  	</Criteria>
+  	<Criteria id="Expansion1">
+  		<GameCoreInUse>Expansion1</GameCoreInUse>
+  	</Criteria>
+  	<Criteria id="Expansion2">
+  		<GameCoreInUse>Expansion2</GameCoreInUse>
+  	</Criteria>
+    <!-- CORE-CRITERIAS END+++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- MORE-LENSES-CRITERIAS START++++++++++++++++++++++++++++++++++++++++ -->
+  	<Criteria id="MoreLenses">
+      <ModInUse>35f33319-ad93-4d6b-bf27-406fac382d06</ModInUse>
+  	</Criteria>
+    <!-- MORE-LENSES-CRITERIAS END++++++++++++++++++++++++++++++++++++++++++ -->
+  </ActionCriteria>
+
+
+  <InGameActions>
+    <!-- BUILDER-LENS-AAG START+++++++++++++++++++++++++++++++++++++++++++++ -->
+    <UpdateDatabase id="AtAGlance_Database_Builder_Lens">
+  	  <Properties>
+  		  <LoadOrder>5</LoadOrder>
+  	  </Properties>
+  	  <File>Database/AtAGlanceBuilderLense.sql</File>
+  	</UpdateDatabase>
+
+    <ImportFiles id="AtAGlanceUI_ImportFiles_All_Builder_Lens">
+  		<Properties>
+  			<LoadOrder>5</LoadOrder>   <!-- Keep the order lower than ML to keep it compatible -->
+  		</Properties>
+      <File>Base/Assets/UI/Replacements/Panels/ModalLensPanel_AAG.lua</File>
+      <File>Base/Assets/UI/Replacements/MinimapPanel_AAG.lua</File>
+  	</ImportFiles>
+  	<ImportFiles id="AtAGlanceUI_ImportFiles_Basegame_Builder_lens" criteria="Basegame">
+  		<Properties>
+  			<LoadOrder>5</LoadOrder>   <!-- Keep the order lower than ML to keep it compatible -->
+  		</Properties>
+      <File>Base/Assets/UI/MinimapPanel.xml</File>
+  	</ImportFiles>
+  	<ImportFiles id="AtAGlanceUI_ImportFiles_Expansion1_Builder_Lens" criteria="Expansion1">
+  		<Properties>
+  			<LoadOrder>5</LoadOrder>   <!-- Keep the order lower than ML to keep it compatible -->
+  		</Properties>
+  		<File>DLC/Expansion1/UI/Replacements/MinimapPanel.xml</File>
+  	</ImportFiles>
+  	<ImportFiles id="AtAGlanceUI_ImportFiles_Expansion2_Builder_lens" criteria="Expansion2">
+  		<Properties>
+  			<LoadOrder>5</LoadOrder>   <!-- Keep the order lower than ML to keep it compatible -->
+  		</Properties>
+  		<File>DLC/Expansion2/UI/Replacements/MinimapPanel.xml</File>
+  	</ImportFiles>
+
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_MinimapPanel_Builder_Lens">
+  		<Properties>
+  			<LoadOrder>5</LoadOrder>   <!-- Keep the order lower than ML to keep it compatible -->
+  			<LuaContext>MinimapPanel</LuaContext>
+  			<LuaReplace>Base/Assets/UI/Replacements/MinimapPanel_AAG.lua</LuaReplace>
+  		</Properties>
+  	</ReplaceUIScript>
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_ModalLensPanel_Builder_Lens">
+  		<Properties>
+  			<LoadOrder>5</LoadOrder>   <!-- Keep the order lower than ML to keep it compatible -->
+  			<LuaContext>ModalLensPanel</LuaContext>
+  			<LuaReplace>Base/Assets/UI/Replacements/Panels/ModalLensPanel_AAG.lua</LuaReplace>
+  		</Properties>
+  	</ReplaceUIScript>
+    <!-- BUILDER-LENS-AAG END+++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- MORE-LENSES START++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- This is loaded proir to the ML-Mod (LoadOrder ~10) -->
+    <ImportFiles id="AtAGlanceUI_ImportFiles_All_Builder_Lens_More_Lenses" criteria="MoreLenses">
+  		<Properties>
+  			<LoadOrder>6</LoadOrder>   <!-- Keep the order higher than AAG to keep it compatible -->
+  		</Properties>
+      <File>Dummy/MinimapPanel_ML.lua</File>
+      <File>Dummy/ModalLensPanel_ML.lua</File>
+  	</ImportFiles>
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_MinimapPanel_Builder_Lens_More_Lenses" criteria="MoreLenses">
+  		<Properties>
+  			<LoadOrder>6</LoadOrder>   <!-- Keep the order higher than AAG to keep it compatible -->
+  			<LuaContext>MinimapPanel</LuaContext>
+  			<LuaReplace>Dummy/MinimapPanel_ML.lua</LuaReplace>    <!-- This dummy file "undo" the prior UI-Replacement -->
+  		</Properties>
+  	</ReplaceUIScript>
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_ModalLensPanel_Builder_Lens_More_Lenses" criteria="MoreLenses">
+  		<Properties>
+  			<LoadOrder>6</LoadOrder>   <!-- Keep the order higher than AAG to keep it compatible -->
+  			<LuaContext>ModalLensPanel</LuaContext>
+  			<LuaReplace>Dummy/ModalLensPanel_ML.lua</LuaReplace>    <!-- This dummy file "undo" the prior UI-Replacement -->
+  		</Properties>
+  	</ReplaceUIScript>
+    <!-- MORE-LENSES END++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- OTHER-FEATURES START+++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <AddUserInterfaces id="AtAGlance_UI_Additions">
+  		<Properties>
+  			<Context>InGame</Context>
+  		</Properties>
+  		<Items>
+  			<File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.xml</File>
+  		</Items>
+  	</AddUserInterfaces>
+
+    <AddGameplayScripts id="AtAGlanceUI_Scripts">
+  	  <Properties>
+  		  <LoadOrder>13066</LoadOrder>
+  	  </Properties>
+  	  <File>Scripts/AtAGlance.lua</File>
+    </AddGameplayScripts>
+
+  	<ImportFiles id="AtAGlanceUI_ImportFiles_All">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  		</Properties>
+      <File>Base/Assets/UI/Replacements/DiplomacyRibbon_AAG.lua</File>
+      <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.lua</File>
+  		<File>Base/Assets/UI/Instances/LeaderIcon.xml</File>
+  		<File>Base/Assets/UI/Panels/MultiplayerTurnManager.xml</File>
+  		<File>Base/Assets/UI/WorldView/PlotInfo.lua</File>
+  	</ImportFiles>
+  	<ImportFiles id="AtAGlanceUI_ImportFiles_Basegame" criteria="Basegame">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  		</Properties>
+      <File>Base/Assets/UI/DiplomacyRibbon.xml</File>
+  	</ImportFiles>
+  	<ImportFiles id="AtAGlanceUI_ImportFiles_Expansion1" criteria="Expansion1">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  		</Properties>
+      <File>Base/Assets/UI/DiplomacyRibbon.xml</File>
+      <File>DLC/Expansion1/UI/Replacements/DiplomacyRibbon_Expansion1.lua</File>
+      <File>DLC/Expansion1/UI/Replacements/DiplomacyRibbon_AAG_XP1.lua</File>
+  	</ImportFiles>
+  	<ImportFiles id="AtAGlanceUI_ImportFiles_Expansion2" criteria="Expansion2">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  		</Properties>
+      <File>DLC/Expansion1/UI/Replacements/DiplomacyRibbon_Expansion1.lua</File>
+  		<File>DLC/Expansion1/UI/Replacements/DiplomacyRibbon_AAG_XP1.lua</File>
+  		<File>DLC/Expansion2/UI/Replacements/DiplomacyRibbon_AAG_XP2.lua</File>
+  		<File>DLC/Expansion2/UI/Replacements/DiplomacyRibbon.xml</File>
+  		<File>DLC/Expansion2/UI/Additions/CongressButton.xml</File>
+  	</ImportFiles>
+
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_DiplomacyRibbon" criteria="Basegame">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  			<LuaContext>DiplomacyRibbon</LuaContext>
+  			<LuaReplace>Base/Assets/UI/Replacements/DiplomacyRibbon_AAG.lua</LuaReplace>
+  		</Properties>
+  	</ReplaceUIScript>
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_DiplomacyRibbon_XP1" criteria="Expansion1">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  			<LuaContext>DiplomacyRibbon</LuaContext>
+  			<LuaReplace>DLC/Expansion1/UI/Replacements/DiplomacyRibbon_AAG_XP1.lua</LuaReplace>
+  		</Properties>
+  	</ReplaceUIScript>
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_DiplomacyRibbon_XP2" criteria="Expansion2">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>   <!-- Keep the order higher than EDR to keep it compatible -->
+  			<LuaContext>DiplomacyRibbon</LuaContext>
+  			<LuaReplace>DLC/Expansion2/UI/Replacements/DiplomacyRibbon_AAG_XP2.lua</LuaReplace>
+  		</Properties>
+  	</ReplaceUIScript>
+
+  	<LocalizedText id="AtAGlanceUI_Texts">
+  	  <Items>
+        <File>Base/Assets/Text/AtAGlanceUI_general.xml</File>
+        <File>Base/Assets/Text/AtAGlanceUI_general_de.xml</File>
+  	  </Items>
+  	</LocalizedText>
+    <!-- OTHER-FEATURES END+++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  </InGameActions>
+
+
+  <Files>
+	  <File>Database/AtAGlanceBuilderLense.sql</File>
+	  <File>Scripts/AtAGlance.lua</File>
+    <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.lua</File>
+    <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.xml</File>
+    <File>Base/Assets/UI/Replacements/DiplomacyRibbon_AAG.lua</File>
+    <File>Base/Assets/UI/Replacements/MinimapPanel_AAG.lua</File>
+    <File>DLC/Expansion1/UI/Replacements/DiplomacyRibbon_AAG_XP1.lua</File>
+    <File>DLC/Expansion2/UI/Replacements/DiplomacyRibbon_AAG_XP2.lua</File>
+    <File>DLC/Expansion1/UI/Replacements/DiplomacyRibbon_Expansion1.lua</File>
+    <File>Base/Assets/UI/DiplomacyRibbon.xml</File>
+  	<File>Base/Assets/UI/MinimapPanel.xml</File>
+    <File>Base/Assets/UI/Instances/LeaderIcon.xml</File>
+    <File>Base/Assets/UI/Panels/MultiplayerTurnManager.xml</File>
+    <File>Base/Assets/UI/Replacements/Panels/ModalLensPanel_AAG.lua</File>
+  	<File>Base/Assets/UI/WorldView/PlotInfo.lua</File>
+  	<File>Base/Assets/Text/AtAGlanceUI_general.xml</File>
+  	<File>Base/Assets/Text/AtAGlanceUI_general_de.xml</File>
+  	<File>DLC/Expansion1/UI/Replacements/MinimapPanel.xml</File>
+    <File>DLC/Expansion2/UI/Replacements/DiplomacyRibbon.xml</File>
+  	<File>DLC/Expansion2/UI/Replacements/MinimapPanel.xml</File>
+  	<File>DLC/Expansion2/UI/Additions/CongressButton.xml</File>
+    <File>Dummy/MinimapPanel_ML.lua</File>
+    <File>Dummy/ModalLensPanel_ML.lua</File>
+  </Files>
+</Mod>

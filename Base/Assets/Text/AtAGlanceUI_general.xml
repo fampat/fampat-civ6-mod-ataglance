@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+  <BaseGameText>
+    <!-- ENGLISH -->
+
+    <!-- Trade screen -->
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_RESOURCES">
+    	<Text>ALL RESOURCES</Text>
+    </Row>
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_SHORTEST_OUTGOING_DURATION">
+    	<Text>Export (closest)</Text>
+    </Row>
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_NOT_OUTGOING">
+    	<Text>Resource not exported</Text>
+    </Row>
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_SHORTEST_INCOMING_DURATION">
+    	<Text>Import (closest)</Text>
+    </Row>
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_NOT_INCOMING">
+    	<Text>Resource not imported</Text>
+    </Row>
+
+  	<!-- Ribbon Tooltips -->
+    <Row Tag="LOC_RIBBON_MILITARY_STRENGTH_WITH_TREASURY_TOOLTIP">
+    	<Text>Military strength ({1_MilitaryMightWithTreasury} considering treasury)</Text>
+    </Row>
+    <Row Tag="LOC_RIBBON_SCORE">
+    	<Text>Overall score</Text>
+    </Row>
+    <Row Tag="LOC_RIBBON_SCIENCE">
+    	<Text>Science yield</Text>
+    </Row>
+    <Row Tag="LOC_RIBBON_CULTURE">
+    	<Text>Culture yield</Text>
+    </Row>
+    <Row Tag="LOC_RIBBON_FAITH">
+    	<Text>Faith yield</Text>
+    </Row>
+    <Row Tag="LOC_RIBBON_FAVOR">
+    	<Text>Diplomatic favor yield</Text>
+    </Row>
+    <Row Tag="LOC_RIBBON_ERA">
+    	<Text>Players current era state</Text>
+    </Row>
+
+  	<!-- Expansion2 Texts -->
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_LUXURY_RESOURCES">
+    	<Text>ALL LUXURY RESOURCES</Text>
+    </Row>
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_LUXURY_SHORTEST_OUTGOING_DURATION">
+    	<Text>Export (closest)</Text>
+    </Row>
+    <Row Tag="LOC_DIPLOMACY_DEAL_ALL_LUXURY_NOT_OUTGOING">
+    	<Text>Resource not exported</Text>
+    </Row>
+
+  	<!-- Lense -->
+  	<Row Tag="LOC_AAG_BUILDER_LENS">
+    	<Text>Builder</Text>
+    </Row>
+  	<Row Tag="LOC_AAG_BUILDER_LENS_TOOLTIP">
+    	<Text>Shows builder improvable/repairable tiles.</Text>
+    </Row>
+  	<Row Tag="LOC_AAG_BUILDER_IMPROVEMENT">
+    	<Text>Improved resource</Text>
+    </Row>
+  	<Row Tag="LOC_AAG_BUILDER_IMPROVABLE">
+    	<Text>Improvable resource</Text>
+    </Row>
+  	<Row Tag="LOC_AAG_BUILDER_REPAIR">
+    	<Text>Repairable improvement</Text>
+    </Row>
+  	<Row Tag="LOC_AAG_BUILDER_DEFAULT">
+    	<Text>No improvable resource</Text>
+  	</Row>
+
+    <!-- Notification -->
+    <Row Tag="LOC_ATAGLANCE_DEAL_REMAINING_HEADLINE">
+      <Text>Incoming deal will end shortly</Text>
+    </Row>
+    <Row Tag="LOC_ATAGLANCE_DEAL_REMAINING_CONTENT">
+      <Text>Inbound deal ends in {3_TurnCount} turn(s): {1_ResourceName} from {2_LeaderName}</Text>
+    </Row>
+    <Row Tag="LOC_ATAGLANCE_DEAL_ENDED_HEADLINE">
+      <Text>Incoming deal ended</Text>
+    </Row>
+    <Row Tag="LOC_ATAGLANCE_DEAL_ENDED_CONTENT">
+      <Text>Inbound deal ended: {1_ResourceName} from {2_LeaderName}</Text>
+    </Row>
+  </BaseGameText>
+</GameData>

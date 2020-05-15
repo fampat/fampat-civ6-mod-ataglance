@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Include File="LeaderIcon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\..\..\..\..\..\CivTech\Libs\ForgeUI\ForgeUI_Assets\Controls.xsd">
+
+	<!-- AtAGlance START	-->
+	<Instance Name="LeaderIconExtended" >
+		<Grid ID="LeaderGrid" Style="EnhancedToolTip" Size="64,parent" Color="255,200,100,255">
+			<Stack ID="LeaderStackExtended" Anchor="C,T" StackGrowth="Bottom" StackPadding="5">
+				<Button ID="SelectButton" Size="auto,auto">
+					<Image Texture="Controls_CircleBacking45" Size="51,51" Anchor="C,C" Offset="0,1"/>
+					<Image ID="YouIndicator" Hidden="1" Size="55,53" Texture="Diplomacy_YouIndicator45" Anchor="C,C"/>
+					<Image ID="Portrait" Anchor="C,C" Size="45,45" Texture="Leaders45" />
+					<Image ID="TeamRibbon" Anchor="C,B" Offset="0,-8" Texture="TeamRibbon53" Size="53,53"/>
+					<Button ID="Relationship" StretchMode="None" Style="DiplomacyRelationshipPips" Anchor="L,B" Disabled="1" ConsumeMouse="0"/>
+					<Label ID="TradeIndicator" String="[ICON_CityStateQuest]" Anchor="L,T" Offset="0,2" Hidden="1"/>	<!-- AtAGlance - EDR -->
+					<Label ID="PeaceIndicator" String="[ICON_MAKE_PEACE]" Anchor="L,T" Offset="0,2" Hidden="1"/>	<!-- AtAGlance - EDR -->
+					<Label ID="GameEra" String="[ICON_New]" Anchor="R,B" Offset="1,3" Hidden="1" ConsumeMouse="0"/>
+				</Button>
+				<Label ID="Score" Anchor="L,B" Size="parent,15" Offset="0,5" Style="FontNormal12" String="Sco" ConsumeMouse="0"/>
+				<Label ID="Military" Anchor="L,B" Size="parent,15" Offset="0,0" Style="CityPanelCBProduction" String="Mil" ConsumeMouse="0"/>
+				<Label ID="Science" Anchor="L,B" Size="parent,15" Offset="0,0" Style="CityPanelCBScience" String="Sci" ConsumeMouse="0"/>
+				<Label ID="Culture" Anchor="L,B" Size="parent,15" Offset="0,0" Style="CityPanelCBCulture" String="Cul" ConsumeMouse="0"/>
+				<Label ID="Faith" Anchor="L,B" Size="parent,15" Offset="0,0" Style="CityPanelCBFaith" String="Fai" ConsumeMouse="0"/>
+				<Label ID="Favor" Anchor="L,B" Size="parent,15" Offset="3,0" Style="FontNormal12" String="Fav" Hidden="1" ConsumeMouse="0"/>
+			</Stack>
+			<Image ID="CivIndicator" Anchor="R,T" Texture="CircleBacking22" Size="22,22" Offset="-3,-2" Hidden="1">
+				<Image ID="CivIcon" Anchor="C,C" Texture="CivSymbols22" Size="22,22"/>
+			</Image>
+		</Grid>
+	</Instance>
+	<!-- AtAGlance END	-->
+
+	<Instance Name="LeaderIconTarget32" >
+		<Button ID="SelectButton" Size="auto,auto">
+			<Image Texture="Controls_CircleBacking28" Size="35,35" Anchor="C,C" Offset="0,1"/>
+			<Image ID="YouIndicator" Hidden="1" Size="38,38" Texture="Controls_CircleRim40" Anchor="C,C"/>
+			<Image ID="Portrait" Anchor="C,C" Size="32,32" Texture="Leaders32" />
+			<Image ID="TargetIcon" Offset="0,0" Texture="Emergency_Target44" Color="255,0,0,255" Size="44,44" Anchor="C,C"/>
+			<Image ID="TeamRibbon" Anchor="C,T" Offset="0,8" Texture="TeamRibbon32" Size="32,32"/>
+			<Button ID="Relationship" Style="DiplomacyRelationshipPips" Anchor="L,B" Disabled="1" ConsumeMouse="0" Offset="-3,-3"/>
+			<Image ID="CivIndicator" Anchor="R,T" Texture="CircleBacking22" Size="22,22" Offset="-5,-2" Hidden="1">
+				<Image ID="CivIcon" Anchor="C,C" Texture="CivSymbols22" Size="22,22"/>
+			</Image>
+		</Button>
+	</Instance>
+
+  <Instance Name="LeaderIcon32" >
+    <Button ID="SelectButton" Size="auto,auto">
+      <Image Texture="Controls_CircleBacking28" Size="35,35" Anchor="C,C" Offset="0,1"/>
+      <Image ID="YouIndicator" Hidden="1" Size="38,38" Texture="Controls_CircleRim40" Anchor="C,C"/>
+      <Image ID="Portrait" Anchor="C,C" Size="32,32" Texture="Leaders32" />
+      <Image ID="TeamRibbon" Anchor="C,T" Offset="0,8" Texture="TeamRibbon32" Size="32,32"/>
+      <Button ID="Relationship" Style="DiplomacyRelationshipPips" Anchor="L,B" Disabled="1" ConsumeMouse="0" Offset="-3,-3"/>
+      <Image ID="CivIndicator" Anchor="R,T" Texture="CircleBacking22" Size="22,22" Offset="-5,-2" Hidden="1">
+        <Image ID="CivIcon" Anchor="C,C" Texture="CivSymbols22" Size="22,22"/>
+      </Image>
+    </Button>
+  </Instance>
+
+	<Instance Name="LeaderIcon45" >
+		<Button ID="SelectButton" Size="auto,auto">
+			<Image Texture="Controls_CircleBacking45" Size="51,51" Anchor="C,C" Offset="0,1"/>
+			<Image ID="YouIndicator" Hidden="1" Size="55,53" Texture="Diplomacy_YouIndicator45" Anchor="C,C"/>
+			<Image ID="Portrait" Anchor="C,C" Size="45,45" Texture="Leaders45" />
+			<Image ID="TeamRibbon" Anchor="C,B" Offset="0,-4" Texture="TeamRibbon53" Size="53,53"/>
+			<Button ID="Relationship" Style="DiplomacyRelationshipPips" Anchor="L,B" Disabled="1" ConsumeMouse="0"/>
+			<Label ID="TradeIndicator" String="[ICON_CityStateQuest]" Anchor="L,T" Offset="0,2" Hidden="1"/>	<!-- AtAGlance - EDR -->
+			<Label ID="PeaceIndicator" String="[ICON_MAKE_PEACE]" Anchor="L,T" Offset="0,2" Hidden="1"/>	<!-- AtAGlance - EDR -->
+			<Image ID="CivIndicator" Anchor="R,T" Texture="CircleBacking22" Size="22,22" Offset="-5,-2" Hidden="1">
+				<Image ID="CivIcon" Anchor="C,C" Texture="CivSymbols22" Size="22,22"/>
+			</Image>
+		</Button>
+	</Instance>
+
+	<Instance Name="LeaderIcon55">
+		<Button ID="SelectButton" Size="auto,auto">
+			<Image Texture="Controls_CircleBacking68" Size="68,68" Anchor="C,C"/>
+			<Image  ID="YouIndicator" Hidden="1" Size="64,62" Texture="Diplomacy_YouIndicator" Anchor="C,C"/>
+			<Image  ID="Portrait" Anchor="C,C" Size="55,55" Texture="Leaders55" />
+			<Image ID="TeamRibbon" Anchor="C,B" Offset="0,-4" Texture="TeamRibbon53" Size="53,53"/>
+			<Button ID="Relationship" Style="DiplomacyRelationshipPips" Anchor="L,B" Disabled="1" ConsumeMouse="0"/>
+			<Label ID="TradeIndicator" String="[ICON_CityStateQuest]" Anchor="L,T" Offset="0,2" Hidden="1"/>	<!-- AtAGlance - EDR -->
+			<Label ID="PeaceIndicator" String="[ICON_MAKE_PEACE]" Anchor="L,T" Offset="0,2" Hidden="1"/>	<!-- AtAGlance - EDR -->
+			<Image ID="CivIndicator" Anchor="L,T" Texture="CircleBacking22" Size="22,22" Offset="0,0" Hidden="1">
+				<Image ID="CivIcon" Anchor="C,C" Texture="CivSymbols22" Size="22,22"/>
+			</Image>
+		</Button>
+	</Instance>
+
+</Include>

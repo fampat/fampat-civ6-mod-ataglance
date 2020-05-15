@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Context Style="FontNormal16" ColorSet="BodyTextCool" FontStyle="Shadow" Size="parent,parent" ConsumeMouse="1">
+	<Stack ID="MyInventoryStackDimmed" StackGrowth="Right" WrapWidth="240" WrapGrowth="Bottom"/>
+
+	<Container ID="IconOnlyContainerDimmed" Hidden="1"/>
+	<Container ID="LeftRightListContainerDimmed" Hidden="1"/>
+
+	<!-- An instance of an non tradable Icon (all-resources) -->
+	<Instance	Name="IconOnlyDimmed">
+		<GridButton ID="SelectButton" Style="ButtonDraggableGrid" Size="42,42" Offset="0,0" Anchor="L,T" Alpha="0.5">
+		  <Image ID="Icon" StretchMode="None" Size="30,30" Anchor="C,C"/>
+		  <Label ID="AmountText" Style="FontNormalBold11" Anchor="R,B" Offset="-5,-9" FontStyle="Stroke" />
+		</GridButton>
+	</Instance>
+
+	<Instance	Name="LeftRightListDimmed">
+		<Stack ID="List" Size="parent, 0">
+			<Grid Style="ColumnHeader" ID="Title" Size="parent-4,26" Offset="0,0" Anchor="C,T" Color="25,25,25,200">
+				<Label ID="TitleText" Anchor="C,C" Offset="4,0" Style="HeaderSmallCaps" Hidden="false" Color0="89,85,85"/>
+			</Grid>
+			<Stack ID="ListStack" StackGrowth="Right" Anchor="L,T" WrapWidth="parent">
+			</Stack>
+		</Stack>
+	</Instance>
+
+</Context>
