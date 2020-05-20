@@ -31,6 +31,17 @@
     	<Text>Resource not exported</Text>
     </Row>
 
+    <!-- Hex-Overlay -->
+    <Row Tag="LOC_HEX_OVERLAY_HEADER">
+    	<Text>Range Overlay</Text>
+    </Row>
+    <Row Tag="LOC_HEX_OVERLAY_PANEL">
+    	<Text>Range Overlay Panel</Text>
+    </Row>
+    <Row Tag="LOC_HEX_OVERLAY_PANEL_RANGE">
+    	<Text>Range</Text>
+    </Row>
+
     <!-- Notification -->
     <Row Tag="LOC_ATAGLANCE_DEAL_REMAINING_HEADLINE">
       <Text>Incoming deal will end shortly</Text>

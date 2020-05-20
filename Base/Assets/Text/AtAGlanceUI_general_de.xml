@@ -31,6 +31,17 @@
   		<Text>Resource wird nicht exportiert</Text>
   	</Replace>
 
+    <!-- Hex-Overlay -->
+    <Replace Tag="LOC_HEX_OVERLAY_HEADER" Language="de_DE">
+    	<Text>Entfernungsmaske</Text>
+    </Replace>
+    <Replace Tag="LOC_HEX_OVERLAY_PANEL" Language="de_DE">
+    	<Text>Entf. Menü</Text>
+    </Replace>
+    <Replace Tag="LOC_HEX_OVERLAY_PANEL_RANGE" Language="de_DE">
+    	<Text>Entf.</Text>
+    </Replace>
+
     <!-- Notification -->
     <Replace Tag="LOC_ATAGLANCE_DEAL_REMAINING_HEADLINE" Language="de_DE">
       <Text>Eingehender Handel endet in Kürze</Text>

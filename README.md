@@ -1,11 +1,12 @@
 [h1]At a Glance UI[/h1]
 
-Just adds some usefull information to the UI, nothing great in amount of changes, but great in amount of information. :)
+Just adds a few small but useful information to the UI, nothing great in amount of changes, but great in amount of information. :)
 
 [b]Features[/b]
-- Trade-Deal-UI shows all luxuries/strategic (pre GS) ressources and its outgoing/incoming durations.
+- Trade-Deal-UI shows all luxuries/strategic (pre GS) resources and its outgoing/incoming durations.
 - Citizen marker visible on district/wonder-build city-screen.
 - Notification for ending importing trade-deals.
+- Dynamic range-overlay for quick range checking with city and district-highlighting (industrial, entertainment and waterpark)
 
 [b]Whats next?[/b]
 - Nothing planned at the moment.
@@ -17,7 +18,7 @@ Just adds some usefull information to the UI, nothing great in amount of changes
 Compatible with Basegame, R&F and GS.
 Currently localized for EN and DE.
 
-[b]Every feedback and bugreport is welcome![/b]
+[b]Every feedback and bug-report is welcome![/b]
 Special thanks to Gedemon from civfanatics and Tully's annex city-state mod for giving examples on modding cross-ui-gamescript after GS-Update!
 Also very special thanks to Sparrow for the Cheat Menu Panel! Helps alot while modding!
 

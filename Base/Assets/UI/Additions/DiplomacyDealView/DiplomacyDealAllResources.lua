@@ -7,7 +7,7 @@
 include( "InstanceManager" );
 
 -- Debugging mode switch
-local debugMode = false;
+local debugMode = true;
 
 -- UI controls
 local ms_IconOnlyDimmedIM = InstanceManager:new( "IconOnlyDimmed",  "SelectButton", Controls.IconOnlyContainerDimmed );

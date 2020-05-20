@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="017fba02-3052-11e9-b210-d663bd873d93" version="2.4">
+<Mod id="017fba02-3052-11e9-b210-d663bd873d93" version="3.0">
   <Properties>
     <Name>At a Glance UI</Name>
-    <Teaser>Displays useful info at a glance</Teaser>
-    <Description>Adds a resource overview to trade screen, also notifies on ending resource imports. Adds citizen-icons to the building-view for a quick visualization of worked plots.</Description>
+    <Teaser>Displays a few small but useful infos at a glance</Teaser>
+    <Description>Adds a resource overview to trade screen, also notifies on ending resource imports. Adds citizen-icons to the building-view for a quick visualization of worked plots and adds a dynamic range-overlay.</Description>
     <Authors>Fampat</Authors>
     <EnabledByDefault>1</EnabledByDefault>
     <DisabledAtStartup>0</DisabledAtStartup>
@@ -26,16 +26,7 @@
   </ActionCriteria>
 
   <InGameActions>
-    <!-- OTHER-FEATURES START+++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <AddUserInterfaces id="AtAGlance_UI_Additions">
-  		<Properties>
-  			<Context>InGame</Context>
-  		</Properties>
-  		<Items>
-  			<File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.xml</File>
-  		</Items>
-  	</AddUserInterfaces>
-
+    <!-- FEATURES START+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <AddGameplayScripts id="AtAGlanceUI_Scripts">
   	  <Properties>
   		  <LoadOrder>13066</LoadOrder>
@@ -43,12 +34,32 @@
   	  <File>Scripts/AtAGlance.lua</File>
     </AddGameplayScripts>
 
+    <AddUserInterfaces id="AtAGlance_UI_Additions">
+  		<Properties>
+  			<Context>InGame</Context>
+  		</Properties>
+  		<Items>
+  			<File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.xml</File>
+  			<File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.xml</File>
+  		</Items>
+  	</AddUserInterfaces>
+
+    <ReplaceUIScript id="AtAGlanceUI_ReplaceUIScript_PlotInfo">
+  		<Properties>
+  			<LoadOrder>13044</LoadOrder>
+  			<LuaContext>PlotInfo</LuaContext>
+  			<LuaReplace>Base/Assets/UI/Replacements/WorldView/PlotInfo_AAG.lua</LuaReplace>
+  		</Properties>
+  	</ReplaceUIScript>
+
   	<ImportFiles id="AtAGlanceUI_ImportFiles_All">
   		<Properties>
   			<LoadOrder>13044</LoadOrder>
   		</Properties>
+      <File>Base/Assets/UI/Additions/Helper/PlotIterator.lua</File>
       <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.lua</File>
-  		<File>Base/Assets/UI/WorldView/PlotInfo.lua</File>
+      <File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.lua</File>
+  		<File>Base/Assets/UI/Replacements/WorldView/PlotInfo_AAG.lua</File>
   	</ImportFiles>
 
   	<LocalizedText id="AtAGlanceUI_Texts">
@@ -57,14 +68,17 @@
         <File>Base/Assets/Text/AtAGlanceUI_general_de.xml</File>
   	  </Items>
   	</LocalizedText>
-    <!-- OTHER-FEATURES END+++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- FEATURES END+++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   </InGameActions>
 
   <Files>
 	  <File>Scripts/AtAGlance.lua</File>
+    <File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.lua</File>
+    <File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.xml</File>
     <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.lua</File>
     <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.xml</File>
-  	<File>Base/Assets/UI/WorldView/PlotInfo.lua</File>
+    <File>Base/Assets/UI/Additions/Helper/PlotIterator.lua</File>
+  	<File>Base/Assets/UI/Replacements/WorldView/PlotInfo_AAG.lua</File>
   	<File>Base/Assets/Text/AtAGlanceUI_general.xml</File>
   	<File>Base/Assets/Text/AtAGlanceUI_general_de.xml</File>
   </Files>
