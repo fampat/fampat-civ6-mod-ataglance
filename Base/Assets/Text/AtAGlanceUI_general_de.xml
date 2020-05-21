@@ -33,13 +33,13 @@
 
     <!-- Hex-Overlay -->
     <Replace Tag="LOC_HEX_OVERLAY_HEADER" Language="de_DE">
-    	<Text>Entfernungsmaske</Text>
+    	<Text>Umkreismaske</Text>
     </Replace>
     <Replace Tag="LOC_HEX_OVERLAY_PANEL" Language="de_DE">
-    	<Text>Entf. Menü</Text>
+    	<Text>Umkreis Menü</Text>
     </Replace>
     <Replace Tag="LOC_HEX_OVERLAY_PANEL_RANGE" Language="de_DE">
-    	<Text>Entf.</Text>
+    	<Text>Umkreis</Text>
     </Replace>
 
     <!-- Notification -->
