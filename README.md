@@ -12,7 +12,7 @@ Just adds a few small but useful information to the UI, nothing great in amount 
 - Nothing planned at the moment.
 
 [b]Known issues[/b]
-- None right now
+- None right now, testing more atm
 
 [b]Game-versions & Localizations[/b]
 Compatible with Basegame, R&F and GS.
