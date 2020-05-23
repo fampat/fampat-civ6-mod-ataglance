@@ -30,3 +30,4 @@ Support is welcome, but not necessary!
 Maybe you will also enjoy my other mods:
 - "Gift It To Me" - https://steamcommunity.com/sharedfiles/filedetails/?id=1683750352
 - "FortifAI" - https://steamcommunity.com/sharedfiles/filedetails/?id=1683757675
+- "Still A Useful Material" - https://steamcommunity.com/sharedfiles/filedetails/?id=2106687881
