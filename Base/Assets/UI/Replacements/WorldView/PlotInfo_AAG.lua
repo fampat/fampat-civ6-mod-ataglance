@@ -137,7 +137,7 @@ function OnInputHandler(inputStruct)
 end
 
 -- INIT IT!
-function Initialize()
+function Initialize_AAG_PlotInfo()
   -- Hook into the interface-change event
 	Events.InterfaceModeChanged.Add(OnInterfaceModeChanged);
 
@@ -146,4 +146,4 @@ function Initialize()
 end
 
 -- Finally
-Initialize()
+Initialize_AAG_PlotInfo()
