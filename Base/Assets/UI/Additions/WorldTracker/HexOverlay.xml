@@ -7,7 +7,7 @@
 					<Label ID="PanelTitle" Anchor="C,C" Offset="0,7" Align="Center" Size="200,90" WrapWidth="Parent-40" Align="Center" Style="FontFlair16" Color2="143,122,82,255" Color0="106,93,69,230" SmallCaps="20" SmallCapsLeading="0" SmallCapsType="EveryWord" KerningAdjustment="0" String="{LOC_HEX_OVERLAY_HEADER:upper}" >
 				</Button>
 				<Container ID="HexPanelRangeSelector" Offset="0,23" Align="Center" Size="parent,1">
-					<Label Anchor="C,T" Offset="-50,18" String="{LOC_HEX_OVERLAY_PANEL_RANGE:upper}" WrapWidth="Parent-40" Align="Center" Style="FontFlair16" Color2="143,122,82,255" Color0="106,93,69,230" SmallCaps="20" SmallCapsLeading="0" SmallCapsType="EveryWord" KerningAdjustment="0" />
+					<Label Anchor="C,T" Offset="-47,18" String="{LOC_HEX_OVERLAY_PANEL_RANGE:upper}" WrapWidth="Parent-40" Align="Center" Style="FontFlair16" Color2="143,122,82,255" Color0="106,93,69,230" SmallCaps="20" SmallCapsLeading="0" SmallCapsType="EveryWord" KerningAdjustment="0" />
 					<Button ID="HexPanelRangeDown" Style="ArrowButtonLeft" Offset="20,24" Anchor="L,C"/>
 					<Button ID="HexPanelRangeUp" Style="ArrowButtonRight" Offset="20,24" Anchor="R,C"/>
 					<Label ID="HexPanelRangeLabel"  String="6" Offset="30,26" Anchor="C,C" Align="Center" Style="EventPopupTitle" />

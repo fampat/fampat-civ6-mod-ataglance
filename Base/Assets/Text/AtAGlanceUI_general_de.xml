@@ -33,7 +33,7 @@
 
     <!-- Hex-Overlay -->
     <Replace Tag="LOC_HEX_OVERLAY_HEADER" Language="de_DE">
-    	<Text>Umkreismaske</Text>
+    	<Text>Umkreis</Text>
     </Replace>
     <Replace Tag="LOC_HEX_OVERLAY_PANEL" Language="de_DE">
     	<Text>Umkreis Menü</Text>
