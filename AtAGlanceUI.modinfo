@@ -12,7 +12,6 @@
   </Properties>
 
   <ActionCriteria>
-    <!-- CORE-CRITERIAS START+++++++++++++++++++++++++++++++++++++++++++++++ -->
   	<Criteria id="Basegame">
   		<RuleSetInUse>RULESET_STANDARD</RuleSetInUse>
   	</Criteria>
@@ -22,11 +21,9 @@
   	<Criteria id="Expansion2">
   		<GameCoreInUse>Expansion2</GameCoreInUse>
   	</Criteria>
-    <!-- CORE-CRITERIAS END+++++++++++++++++++++++++++++++++++++++++++++++++ -->
   </ActionCriteria>
 
   <InGameActions>
-    <!-- FEATURES START+++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <AddGameplayScripts id="AtAGlanceUI_Scripts">
   	  <Properties>
   		  <LoadOrder>13066</LoadOrder>
@@ -68,7 +65,6 @@
         <File>Base/Assets/Text/AtAGlanceUI_general_de.xml</File>
   	  </Items>
   	</LocalizedText>
-    <!-- FEATURES END+++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
   </InGameActions>
 
   <Files>
