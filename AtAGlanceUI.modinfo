@@ -38,6 +38,7 @@
   		<Items>
   			<File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.xml</File>
   			<File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.xml</File>
+  			<!--<File>Base/Assets/UI/Additions/ToolTips/PlotToolTipLoyalty.xml</File>--> <!-- Skipped ATM -->
   		</Items>
   	</AddUserInterfaces>
 
@@ -56,6 +57,7 @@
       <File>Base/Assets/UI/Additions/Helper/PlotIterator.lua</File>
       <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.lua</File>
       <File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.lua</File>
+      <!--<File>Base/Assets/UI/Additions/ToolTips/PlotToolTipLoyalty.lua</File>--> <!-- Skipped ATM -->
   		<File>Base/Assets/UI/Replacements/WorldView/PlotInfo_AAG.lua</File>
   	</ImportFiles>
 
@@ -71,6 +73,8 @@
 	  <File>Scripts/AtAGlance.lua</File>
     <File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.lua</File>
     <File>Base/Assets/UI/Additions/WorldTracker/HexOverlay.xml</File>
+    <!--<File>Base/Assets/UI/Additions/ToolTips/PlotToolTipLoyalty.lua</File>--> <!-- Skipped ATM -->
+    <!--<File>Base/Assets/UI/Additions/ToolTips/PlotToolTipLoyalty.xml</File>--> <!-- Skipped ATM -->
     <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.lua</File>
     <File>Base/Assets/UI/Additions/DiplomacyDealView/DiplomacyDealAllResources.xml</File>
     <File>Base/Assets/UI/Additions/Helper/PlotIterator.lua</File>

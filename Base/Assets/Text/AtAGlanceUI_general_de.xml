@@ -42,6 +42,11 @@
     	<Text>Umkreis</Text>
     </Replace>
 
+    <!-- Loyalty-Tooltip -->
+    <Replace Tag="LOC_AAG_LOYALTY_TOOLTIP" Language="de_DE">
+    	<Text>Loyalität: {1_Loyalty}</Text>
+    </Replace>
+
     <!-- Notification -->
     <Replace Tag="LOC_ATAGLANCE_DEAL_REMAINING_HEADLINE" Language="de_DE">
       <Text>Eingehender Handel endet in Kürze</Text>

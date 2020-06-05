@@ -42,6 +42,11 @@
     	<Text>Range</Text>
     </Row>
 
+    <!-- Loyalty-Tooltip -->
+    <Row Tag="LOC_AAG_LOYALTY_TOOLTIP">
+    	<Text>Loyalty: {1_Loyalty}</Text>
+    </Row>
+
     <!-- Notification -->
     <Row Tag="LOC_ATAGLANCE_DEAL_REMAINING_HEADLINE">
       <Text>Incoming deal will end shortly</Text>
